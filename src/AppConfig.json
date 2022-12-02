@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "label": "O mě",
+      "href": "/#about-me"
+    },
+    {
+      "label": "Portfolio",
+      "href": "/#portfolio"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/#contact"
+    }
+  ]
+}

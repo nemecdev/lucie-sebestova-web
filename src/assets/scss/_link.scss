@@ -1,0 +1,36 @@
+@mixin link-default() {
+  $linkColor: #4652ff !default;
+  $linkHoverColor: #323ddd !default;
+  $linkActiveColor: #7c32dd !default;
+  $linkUnderLineColor: #ffffff !default;
+  $linkUnderLineHoverColor: $linkUnderLineColor !default;
+  $linkUnderlineW: 25px !default;
+  $linkUnderlineH: 1px !default;
+
+  .link {
+    text-decoration: none;
+    color: $linkColor;
+  }
+
+  .link__underline {
+    width: $linkUnderlineW;
+    height: $linkUnderlineH;
+    background: $linkUnderLineColor;
+  }
+
+  .link:hover > .link__underline {
+    background: $linkUnderLineHoverColor;
+  }
+
+  .link:hover {
+    color: $linkHoverColor;
+  }
+
+  .link--active {
+    color: $linkActiveColor;
+
+    .link__underline {
+      background: $linkActiveColor;
+    }
+  }
+}

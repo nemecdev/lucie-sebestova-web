@@ -1,0 +1,64 @@
+<template>
+  <a class="link-linked-in"
+     :class="{ 'link-linked-in--borderless': borderless }"
+     :href="href"
+     target="_blank"
+  >
+    <svg class="link__svg link-linked-in__svg" viewBox="0 0 13.229166 13.229167">
+      <g>
+        <path
+          d="M 2.0841507,0.66145834 A 1.423311,1.4251407 0 0 0 0.66145821,2.0867516 1.423311,1.4251407 0 0 0 2.0841507,3.5112731 1.423311,1.4251407 0 0 0 3.5076143,2.0867516 1.423311,1.4251407 0 0 0 2.0841507,0.66145834 Z M 9.530551,4.4288007 c -1.4788578,0 -2.1773968,1.1018982 -2.2912603,1.3002807 V 4.6209491 H 4.8671099 v 7.9382719 h 2.3721808 l 0.1001906,0.0039 -0.00313,-3.8475956 C 7.334858,6.7973426 8.255952,6.6555515 8.6210942,6.6226871 9.0112259,6.5875738 10.0908,6.4747526 10.0908,8.5480288 c 0,2.0437492 0.0061,4.0196792 0.0061,4.0196792 h 2.470838 l -0.0107,-4.5027508 C 12.549145,4.8142036 10.993138,4.4288007 9.530551,4.4288007 Z M 0.8718569,4.6379257 V 12.558449 H 3.3604126 V 4.6379257 Z"
+        />
+      </g>
+    </svg>
+  </a>
+</template>
+
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{
+    href: string,
+    borderless?: boolean,
+  }>(), {
+    borderless: false
+  });
+</script>
+
+<style scoped lang="scss">
+  $hoverColor: #ffffff !default;
+  $borderWidth: 1px !default;
+
+  $linkedInColor: #0E76A8;
+
+  .link-linked-in {
+    width: 100%;
+    height: 100%;
+
+    padding: 0.3rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border: $borderWidth solid $linkedInColor;
+    border-radius: $borderRadius;
+
+    .link-linked-in__svg {
+      fill: $linkedInColor;
+    }
+
+    &:hover {
+      border-color: #73a1b6;
+    }
+
+    &:hover>.link-linked-in__svg {
+      fill: #73a1b6;
+    }
+  }
+
+  .link-linked-in--borderless {
+    border: none;
+  }
+</style>
