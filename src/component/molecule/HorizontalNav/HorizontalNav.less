@@ -1,0 +1,100 @@
+@horizontal-nav-link-padding-vertical: 20px;
+@horizontal-nav-link-padding-horizontal: 20px;
+
+@horizontal-nav-link-font-size: 1.2rem;
+
+@horizontal-nav-link-color: #737373;
+@horizontal-nav-link-color-hover: #fcbc45;
+@horizontal-nav-link-color--active: #fcbc45;
+@horizontal-nav-embedded-links-color: #f6c66e;
+@horizontal-nav-social-links-color: #457ffc;
+
+@horizontal-nav-link-color--dark: #f6f6f6;
+@horizontal-nav-link-color-hover--dark: #eeb955;
+@horizontal-nav-link-color--active--dark: #eeb955;
+@horizontal-nav-embedded-links-color--dark: #f0d29a;
+@horizontal-nav-social-links-color--dark: #457ffc;
+
+@page-horizontal-padding: 200px;
+
+.horizontal-nav {
+  display: flex;
+  flex-flow: row nowrap;
+
+  overflow: hidden;
+
+  padding: 0 @page-horizontal-padding;
+
+  &__flex-expand {
+    flex-grow: 1;
+  }
+
+  &__links {
+    &:deep(.link) {
+      padding: @horizontal-nav-link-padding-vertical @horizontal-nav-link-padding-horizontal;
+
+      font-weight: 500;
+      font-size: @horizontal-nav-link-font-size;
+    }
+  }
+
+  &__links {
+    &:deep(.link) {
+      color: @horizontal-nav-link-color;
+
+      &:hover {
+        color: @horizontal-nav-link-color-hover;
+      }
+    }
+  }
+
+  &__route-links {
+    &:deep(.link--active) {
+      color: @horizontal-nav-link-color--active;
+    }
+  }
+
+  &__embedded-links {
+    &:deep(.link) {
+      color: @horizontal-nav-embedded-links-color;
+    }
+  }
+
+  &__social-links {
+    &:deep(.link) {
+      color: @horizontal-nav-social-links-color;
+    }
+  }
+
+  &--dark {
+    .horizontal-nav__links {
+      &:deep(.link) {
+        color: @horizontal-nav-link-color--dark;
+  
+        &:hover {
+          color: @horizontal-nav-link-color-hover--dark;
+        }
+      }
+    }
+  
+    .horizontal-nav__route-links {
+      &:deep(.link--active) {
+        color: @horizontal-nav-link-color--active--dark;
+      }
+    }
+  
+    .horizontal-nav__embedded-links {
+      &:deep(.link) {
+        color: @horizontal-nav-embedded-links-color--dark;
+      }
+    }
+  
+    .horizontal-nav__social-links {
+      &:deep(.link) {
+        color: @horizontal-nav-social-links-color--dark;
+      }
+    }
+  }
+}
+
+@import (optional) "@shared/less/variables.less";

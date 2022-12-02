@@ -1,0 +1,36 @@
+@svg-icon-fill: #2a2a2a;
+@svg-icon-fill--dark: #f6f6f6;
+
+.svg-icon {
+  box-sizing: border-box;
+
+  width: 30px;
+  height: 30px;
+
+  &--small {
+    width: 20px;
+    height: 20px;
+  }
+
+  &--medium {
+    width: 30px;
+    height: 30px;
+  }
+
+  &--large {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--dark {
+    .svg-icon__path {
+      fill: @svg-icon-fill--dark;
+    }
+  }
+}
+
+.svg-icon__path {
+  fill: @svg-icon-fill;
+}
+
+@import (optional) "@shared/less/variables.less";

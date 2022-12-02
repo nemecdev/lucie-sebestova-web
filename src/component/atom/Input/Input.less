@@ -1,0 +1,17 @@
+@input-border-color: #2a2a2a;
+@input-padding-horizontal: 10px;
+@input-padding-vertical: 5px;
+
+.input {
+  padding: @input-padding-vertical @input-padding-horizontal;
+
+  font-weight: 500;
+  text-align: start;
+
+  border: none;
+  border-bottom: 1px solid @input-border-color;
+
+  outline: none;
+}
+
+@import (optional) "@shared/less/variables.less";

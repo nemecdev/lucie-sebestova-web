@@ -1,0 +1,15 @@
+.size(tablet; @content) {
+    @media screen and (min-width: 500px) and (orientation: portrait) {
+      @content();
+    }
+
+    @media screen and (min-width: 900px) and (orientation: landscape) {
+      @content();
+    }
+}
+
+.size(pc; @content) {
+    @media screen and (min-width: 1280px) and (min-height: 600px) and (orientation: landscape) {
+      @content();
+    }
+}

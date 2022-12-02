@@ -1,0 +1,17 @@
+@heading-color: #2a2a2a;
+@heading-color--dark: #f6f6f6;
+
+.heading {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  color: @heading-color;
+
+  &--dark {
+    color: @heading-color--dark;
+  }
+}
+
+@import (optional) "@shared/less/variables.less";

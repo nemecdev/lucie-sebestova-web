@@ -1,0 +1,24 @@
+{
+	"name": "nemecdev/lucie-sebestova-web",
+  "authors": [
+    {
+      "name": "Karel Němec",
+      "email": "nemec.karel.r93@gmail.com",
+      "homepage": "https://nemecdev.tech",
+      "role": "Developer"
+    }
+  ],
+  "description": "PHP backend XHR script for lucie-sebestova-web",
+  "type": "library",
+  "keywords": ["web", "xhr", "backend", "php"],
+  "license": "GPL-3.0-or-later",
+	"version": "0.0.1",
+  "autoload": {
+    "psr-4": {
+      "App\\": "./server/classes/"
+    }
+  },
+	"require": {
+		"php-di/php-di": "^6.4"
+	}
+}

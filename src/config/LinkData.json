@@ -1,0 +1,31 @@
+{
+  "links": [
+    {
+      "label": "Domů",
+      "href": "#home"
+    },
+    {
+      "label": "O mně",
+      "href": "#about-me"
+    },
+    {
+      "label": "Portfolio",
+      "href": "#portfolio"
+    },
+    {
+      "label": "Kontakt",
+      "href": "#contact"
+    },
+    {
+      "type": "file",
+      "label": "Stáhnout CV",
+      "href": "/Lucie-Šebestová-CV.pdf",
+      "target": "_blank"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://cz.linkedin.com/in/lucie-%C5%A1ebestov%C3%A1-a19b644b",
+      "target": "_blank"
+    }
+  ]
+}

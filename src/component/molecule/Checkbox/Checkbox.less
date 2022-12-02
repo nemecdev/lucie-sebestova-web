@@ -1,0 +1,26 @@
+@checkbox-label-color--dark: #f6f6f6;
+@checkbox-label-font-size: 0.8rem;
+@checkbox-label-horizontal-margin: 10px;
+
+@checkbox-vertical-padding: 1rem;
+
+.checkbox {
+  padding: @checkbox-vertical-padding 0;
+
+  &__label {
+    font-size: @checkbox-label-font-size;
+    font-style: italic;
+
+    &--dark {
+      color: @checkbox-label-color--dark;
+    }
+  }
+
+  &__label-before {
+    margin-right: @checkbox-label-horizontal-margin;
+  }
+
+  &__label-after {
+    margin-left: @checkbox-label-horizontal-margin;
+  }
+}

@@ -1,0 +1,112 @@
+@link-font-weight: normal;
+@link-font-color: #0066ff;
+@link-font-color-hover: #d48a00;
+@link-font-color--dark: #ffe3b0;
+@link-font-color-hover--dark: #fcbc45;
+
+@link-bg-color: transparent;
+@link-bg-color--dark: #2a2a2a;
+
+@link-cta-border-radius: 3px;
+@link-cta-font-color: #d48a00;
+@link-cta-font-color-hover: #2a2a2a;
+@link-cta-border-color: #d48a00;
+@link-cta-border-color-hover: #2a2a2a;
+
+@link-cta-bg-color--dark: transparent;
+@link-cta-font-color--dark: #fcbc45;
+@link-cta-font-color-hover--dark: #f6f6f6;
+@link-cta-border-color--dark: #fcbc45;
+@link-cta-border-color-hover--dark: #f6f6f6;
+
+@link-cta-bg-color--filled: #fcbc45;
+@link-cta-font-color--filled: #2a2a2a;
+@link-cta-font-color-hover--filled: #f6f6f6;
+@link-cta-border-color--filled: #fcbc45;
+@link-cta-border-color-hover--filled: #fcbc45;
+
+@link-cta-bg-color--filled--dark: transparent;
+
+@link-transition-duration: 0.2s;
+
+.link {
+  box-sizing: border-box;
+
+  display: inline-block;
+
+  background-color: @link-bg-color;
+
+  border: none;
+  cursor: pointer;
+
+  line-height: 100%;
+  font-weight: @link-font-weight;
+  color: @link-font-color;
+  text-align: center;
+
+  transition-property: color, background-color, border;
+  transition-timing-function: ease-out;
+  transition-duration: @link-transition-duration;
+
+  &:hover {
+    color: @link-font-color-hover;
+  }
+
+  &--dark {
+    color: @link-font-color--dark;
+
+    &:hover {
+      color: @link-font-color-hover--dark;
+    }
+  }
+
+  &--no-decoration {
+    .link__content {
+      text-decoration: none;
+    }
+  }
+
+  &--call-to-action {
+    font-weight: 500;
+    color: @link-cta-font-color;
+    border: 1px solid @link-cta-border-color;
+    border-radius: @link-cta-border-radius;
+
+    &:hover {
+      color: @link-cta-font-color-hover;
+      border: 1px solid @link-cta-border-color-hover;
+    }
+
+    &.link--dark {
+      color: @link-cta-font-color--dark;
+      border: 1px solid @link-cta-border-color--dark;
+
+      &:hover {
+        color: @link-cta-font-color-hover--dark;
+        border-color: @link-cta-border-color-hover--dark;
+      }
+    }
+  }
+
+  &--call-to-action-filled {
+    background-color: @link-cta-bg-color--filled;
+    border-color: @link-cta-border-color--filled;
+    color: @link-cta-font-color--filled;
+
+    &:hover {
+      color: @link-cta-font-color-hover--filled;
+      border-color: @link-cta-border-color-hover--filled;
+    }
+
+    &.link--dark {
+      background-color: @link-cta-bg-color--filled--dark;
+    }
+  }
+}
+
+.link__content {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+@import (optional) "@shared/less/variables.less";

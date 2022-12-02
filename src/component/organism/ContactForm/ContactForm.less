@@ -1,0 +1,16 @@
+@contact-form-border-color: #626262;
+@contact-form-border-radius: 3px;
+@contact-form-padding: 30px;
+
+.contact-form {
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding: @contact-form-padding;
+  border: 3px solid @contact-form-border-color;
+  border-radius: @contact-form-border-radius;
+
+  &__field {
+    margin-bottom: 15px;
+  }
+}

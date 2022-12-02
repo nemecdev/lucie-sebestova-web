@@ -1,0 +1,132 @@
+@vertical-nav-btn-menu-margin: 30px;
+@vertical-nav-btn-close-height: 60px;
+@vertical-nav-link-vertical-padding: 20px;
+
+@vertical-nav-link-font-size: 1.5rem;
+
+@vertical-nav-bg-color: #2a2a2a;
+
+@vertical-nav-link-color: #f6f6f6;
+@vertical-nav-link-color-hover: #fcbc45;
+@vertical-nav-link-border-color: #343434;
+@vertical-nav-link-color--active: #fcbc45;
+
+@vertical-nav-embedded-links-color: #45fcb3;
+@vertical-nav-social-links-color: #457ffc;
+
+.vertical-nav {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: calc(100% - @vertical-nav-btn-close-height);
+
+  &--hidden {
+    height: 0;
+  }
+
+  &__content-wrapper {
+    height: 100%;
+    background-color: @vertical-nav-bg-color;
+
+    overflow-y: auto;
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__flex-expand-top,
+  &__flex-expand-bottom {
+    flex-grow: 1;
+  }
+
+  &__heading {
+    order: 4;
+
+    font-family: 'BlackSignature';
+    font-size: 2.5rem;
+    color: #fcbc45;
+
+    text-align: center;
+
+    padding-bottom: @vertical-nav-link-vertical-padding;
+  }
+
+  &__flex-expand-top {
+    order: 0;
+  }
+
+  &__flex-expand-bottom {
+    order: 999;
+  }
+
+  &__links {
+    flex-flow: column nowrap;
+    align-items: stretch;
+    
+    &:deep(.link) {
+      padding: @vertical-nav-link-vertical-padding 0;
+      color: @vertical-nav-link-color;
+      
+      font-size: @vertical-nav-link-font-size;
+      font-weight: 500;
+      
+      border-bottom: 1px solid @vertical-nav-link-border-color;
+
+      &:hover {
+        color: @vertical-nav-link-color-hover;
+      }
+    }
+  }
+
+  &__route-links {
+    order: 2;
+
+    &:deep(.link--active) {
+      color: @vertical-nav-link-color--active;
+    }
+  }
+
+  &__embedded-links {
+    order: 1;
+
+    &:deep(.link) {
+      color: @vertical-nav-embedded-links-color;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__social-links {
+    order: 3;
+
+    &:deep(.link) {
+      color: @vertical-nav-social-links-color;
+    }
+  }
+
+  &__close-btn {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: @vertical-nav-btn-close-height;
+  }
+
+  &__menu-btn {
+    position: fixed;
+    bottom: @vertical-nav-btn-menu-margin;
+    right: @vertical-nav-btn-menu-margin;
+
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@import (optional) "@shared/less/variables.less";

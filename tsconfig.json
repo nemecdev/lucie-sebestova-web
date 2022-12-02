@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": "./",
+    "paths": {
+      "@config/*": ["src/config/*"],
+      "@atom/*": ["src/component/atom/*"],
+      "@molecule/*": ["src/component/molecule/*"],
+      "@organism/*": ["src/component/organism/*"],
+      "@template/*": ["src/component/template/*"],
+      "@page/*": ["src/component/page/*"],
+      "@shared/*": ["src/component/shared/*"],
+      "@store/*": ["src/store/*"],
+      "@model/*": ["src/model/*"],
+      "@service/*": ["src/service/*"],
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

@@ -1,0 +1,97 @@
+@home-page-section-contact-bg-color: #2a2a2a;
+@home-page-section-portfolio-bg-color: #fafafa;
+
+@home-page-section-vertical-padding: 80px;
+@home-page-section-vertical-padding-pc: 150px;
+
+@page-horizontal-padding: 40px;
+@page-horizontal-padding-pc: 200px;
+
+.page-home {
+  &__content-wrapper {
+    &--hidden {
+      display: none;
+    }
+
+    .size(pc; {
+      &--hidden {
+        display: initial;
+      }
+    });
+  }
+
+  &__section {
+    width: 100%;
+
+    padding: @home-page-section-vertical-padding @page-horizontal-padding;
+
+    .size(pc; {
+      padding: @home-page-section-vertical-padding-pc @page-horizontal-padding-pc;
+    });
+  }
+
+  &__section-about-me {
+    .paragraph {
+      text-align: left;
+    }
+
+    .img {
+      height: 300px;
+
+      .size(pc; {
+        height: calc(500px - 20px);
+      });
+    }
+  }
+
+  &__section-portfolio {
+    background-color: @home-page-section-portfolio-bg-color;
+  }
+
+  &__section-contact {
+    background-color: @home-page-section-contact-bg-color;
+
+    .paragraph {
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .contact-form {
+      width: 100%;
+
+      .size(pc; {
+        width: 500px;
+      });
+
+      &__heading {
+        margin: 0;
+        margin-bottom: -2px;
+        padding: 10px 20px;
+
+        border: 2px solid #cdcdcd;
+        border-radius: 3px 3px 0 0;
+      }
+    }
+  }
+
+  &__section-content {
+    margin-top: @home-page-section-vertical-padding;
+
+    .size(pc; {
+      margin-top: @home-page-section-vertical-padding-pc;
+    });
+  }
+}
+
+.section-about-me__content {
+  .size(pc; {
+    width: 100%;
+    max-width: 100%;
+
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+  });
+}
+
+@import (optional) "@shared/less/variables.less";

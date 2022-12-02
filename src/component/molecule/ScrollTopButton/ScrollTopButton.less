@@ -1,0 +1,17 @@
+@scroll-top-btn-right-pos: 30px;
+@scroll-top-btn-bottom-pos: 100px;
+
+.scroll-top-button {
+  position: fixed;
+
+  width: auto;
+
+  right: @scroll-top-btn-right-pos;
+  bottom: @scroll-top-btn-bottom-pos;
+
+  z-index: 3;
+
+  &--hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,87 @@
+@icon-btn-bg-color: #f6f6f6;
+@icon-btn-bg-color--dark: #252525;
+
+@icon-btn-border-color: #ececec;
+@icon-btn-border-color--dark: #f6f6f6;
+
+@icon-btn-icon-fill--dark: #f6f6f6;
+
+@icon-btn-hover-icon-fill: #f6f6f6;
+@icon-btn-hover-icon-fill--dark: #fcbc45;
+@icon-btn-hover-bg-color: #252525;
+@icon-btn-hover-bg-color--dark: #252525;
+
+@icon-btn-border-size: 1px;
+@icon-btn-animation-duration: 0.2s;
+
+.icon-btn {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 15px;
+
+  background-color: transparent;
+
+  border: @icon-btn-border-size solid transparent;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  transition-duration: @icon-btn-animation-duration;
+
+  &:hover {
+    background-color: @icon-btn-hover-bg-color;
+  }
+
+  &:hover:deep(.svg-icon > .svg-icon__path) {
+    fill: @icon-btn-hover-icon-fill;
+  }
+
+  &--border {
+    border-color: @icon-btn-border-color;
+  }
+
+  &--dark {
+    background-color: @icon-btn-bg-color--dark;
+
+    &:deep(.svg-icon > .svg-icon__path) {
+      fill: @icon-btn-icon-fill--dark;
+      border: 1px solid red;
+    }
+
+    &:hover:deep(.svg-icon > .svg-icon__path) {
+      fill: @icon-btn-hover-icon-fill--dark;
+    }
+
+    &.icon-btn--border {
+      border-color: @icon-btn-border-color--dark;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+
+    &.icon-btn--filled {
+      background-color: @icon-btn-bg-color--dark;
+
+      &:hover {
+        background-color: @icon-btn-hover-bg-color--dark;
+      }
+    }
+  }
+
+  &--border-radius {
+    border-radius: 100%;
+  }
+
+  &--filled {
+    background-color: @icon-btn-bg-color;
+  }
+}
+
+@import (optional) "@shared/less/variables.less";

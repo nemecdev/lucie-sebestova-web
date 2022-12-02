@@ -1,0 +1,61 @@
+@section-heading-outlined-color: #ffffff;
+@section-heading-filled-color: #2a2a2a;
+
+@section-heading-outlined-color--dark: #2a2a2a;
+@section-heading-filled-color--dark: #f6f6f6;
+
+@section-heading-outlined-gradient-color1: #f8c25a;
+@section-heading-outlined-gradient-color2: #7e7e7ede;
+
+.section-heading {
+  .heading--outlined {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+
+    color: @section-heading-outlined-color;
+    text-align: center;
+
+    background: linear-gradient(to bottom, @section-heading-outlined-gradient-color1 10%, @section-heading-outlined-gradient-color2 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.2rem transparent;
+    color: @section-heading-outlined-color;
+    font-weight: 500;
+    white-space: nowrap;
+
+    .size(pc; {
+      font-size: 12rem;
+      -webkit-text-stroke: 0.3rem transparent;
+    });
+  }
+
+  .heading--filled {
+    margin: 0;
+    padding: 0;
+    margin-top: -2.5rem;
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: @section-heading-filled-color;
+
+    .size(pc; {
+      margin-top: -8rem;
+      font-size: 9rem;
+    });
+  }
+
+  &--dark {
+    .heading--outlined {
+      color: @section-heading-outlined-color--dark;
+    }
+
+    .heading--filled {
+      color: @section-heading-filled-color--dark;
+    }
+  }
+}
+
+
+@import (optional) "@shared/less/variables.less";

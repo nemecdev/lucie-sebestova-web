@@ -1,0 +1,36 @@
+@nav-bg-color: #ffffff;
+
+.horizontal-nav {
+  display: none;
+
+  .size(pc; {
+    display: flex;
+  });
+}
+
+.vertical-nav {
+  .size(pc; {
+    display: none;
+  });
+}
+
+.nav {
+  width: 100%;
+  position: absolute;
+  
+  top: 0;
+  left: 0;
+
+  z-index: 3;
+
+  transition-property: position, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+
+  &--fixed {
+    position: fixed;
+    background-color: @nav-bg-color;
+  }
+}
+
+@import (optional) "@shared/less/variables.less";
