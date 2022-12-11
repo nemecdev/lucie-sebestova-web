@@ -1,0 +1,45 @@
+@primary-color: #F6F6F6;
+@secondary-color: #353535;
+@accent-color: #F8C25A;
+@border-radius: 4px;
+
+@nav-bg-color: @secondary-color;
+@nav-link-color: @primary-color;
+@nav-link-color-hover: #FFFFFF;
+@nav-link-font-size: 34px;
+
+.nav {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+
+  padding: 10vh 0;
+
+  background-color: @nav-bg-color;
+}
+
+.link-group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+
+  text-align: center;
+}
+
+.link {
+  color: @nav-link-color;
+  font-size: @nav-link-font-size;
+
+  &:hover {
+    color: @nav-link-color-hover;
+  }
+}
+
+.nav--hidden {
+  display: none;
+}

@@ -27,23 +27,5 @@
   }
 </script>
 
-<style lang="scss">
-  $accentColor: #444444 !default;
-  $primaryColor: #ffffff !default;
-
-  .cta-btn {
-    padding: 0.5rem 1.5rem;
-
-    border: 0.1rem solid $accentColor;
-    border-radius: $borderRadius;
-
-    color: $accentColor;
-    font-size: 1.2rem;
-    text-decoration: none;
-
-    &:hover {
-      color: $primaryColor;
-      border-color: $primaryColor;
-    }
-  }
+<style scoped lang="less">
 </style>

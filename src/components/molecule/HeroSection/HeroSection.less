@@ -1,0 +1,52 @@
+@primary-color: #F6F6F6;
+@secondary-color: #353535;
+@accent-color: #F8C25A;
+@border-radius: 4px;
+@default-font-size: 20px;
+
+@hero-section-bg-color: @secondary-color;
+@hero-title-font-color: @accent-color;
+@hero-title-sub-font-color: @primary-color;
+@hero-cta-link-font-color: @accent-color;
+@hero-cta-border-radius: @border-radius;
+@hero-cta-border-color: @accent-color;
+@hero-cta-hover-border-color: @primary-color;
+@hero-cta-hover-font-color: @primary-color;
+@hero-cta-font-size: @default-font-size;
+
+.hero-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  padding: 30px 0;
+
+  background-color: @hero-section-bg-color;
+}
+
+.hero-title {
+  font-family: 'BlackSignature';
+
+  color: @hero-title-font-color;
+}
+
+.hero-title-sub {
+  color: @hero-title-sub-font-color;
+}
+
+.hero-call-to-action-link {
+  margin: 0;
+  margin-top: 15px;
+  padding: 5px 10px;
+
+  border: 1px solid @hero-cta-border-color;
+  border-radius: @hero-cta-border-radius;
+
+  font-size: @hero-cta-font-size;
+  color: @hero-cta-link-font-color;
+
+  &:hover {
+    color: @hero-cta-hover-font-color;
+    border-color: @hero-cta-hover-border-color;
+  }
+}

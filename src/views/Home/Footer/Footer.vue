@@ -10,39 +10,14 @@
 </template>
 
 <script setup lang="ts">
-  import { MainStore } from '@stores/MainStore';
+  import { useStore } from '@stores/Store';
 
-  const mainStore = MainStore()
+  const store = useStore()
   const shouldBeHidden = () => {
-    return mainStore.getIsVisible('nav')
-           || mainStore.getIsVisible('about-me-article')
+    return store.getIsVisible('nav')
+           || store.getIsVisible('about-me-article')
   }
 </script>
 
-<style scoped lang="scss">
-  $linkColor: #bec3ff;
-  $linkHoverColor: #d8dbff;
-  $linkActiveColor: #8f7fa3;
-
-  .footer {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-
-    padding: 10px 0;
-
-    background: $secondaryColor;
-
-    border-top: 2px solid $primaryColor;
-
-    color: $primaryColor;
-    font-size: 0.8rem;
-
-    @include link-default();
-  }
-
-  .footer--hidden {
-    display: none;
-  }
+<style scoped lang="less">
 </style>

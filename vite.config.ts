@@ -10,22 +10,13 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": "/src",
-      "@atoms": "/src/components/atoms",
-      "@molecules": "/src/components/molecules",
-      "@cls": "/src/classes",
-      "@views": "/src/views",
-      "@assets": "/src/assets",
+      "@atom": "/src/components/atom",
+      "@molecule": "/src/components/molecule",
+      "@organism": "/src/components/organism",
+      "@template": "/src/components/template",
+      "@page": "/src/components/page",
+      "@shared": "/src/components/shared",
       "@stores": "/src/stores",
-      "@components": "/src/components"
-    }
-  },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-          @import "@assets/scss/global.scss";
-        `
-      }
     }
   },
 })

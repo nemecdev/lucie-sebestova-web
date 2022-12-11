@@ -1,6 +1,6 @@
 <template>
   <article class="about-me-article">
-    <button class="close-btn" @click="mainStore.hide('about-me-article')">
+    <button class="close-btn" @click="store.hide('about-me-article')">
       <svg class="close-btn__svg" width="50" height="50" viewBox="0 0 50 50">
         <path d="M2.70459e-05 6.93665L6.93668 0L25.0003 18.0636L43.0633 0.000682286L49.9999 6.93734L31.937 25.0003L50 43.0633L43.0633 49.9999L25.0003 31.9369L6.93665 50.0006L0 43.064L18.0637 25.0003L2.70459e-05 6.93665Z"/>
       </svg>
@@ -32,138 +32,18 @@
     </p>
     <div class="about-me-artice__cta-group">
       <CallToActionButton class="about-me-article__cta link download-cv-btn" inner-txt="Stáhnout CV" :link-href="CV_FILE" target="_blank" />
-      <CallToActionButton class="about-me-article__cta link close-cta-btn" inner-txt="Zavřít" target="_blank" :click-call="(() => mainStore.hide('about-me-article'))" />
+      <CallToActionButton class="about-me-article__cta link close-cta-btn" inner-txt="Zavřít" target="_blank" :click-call="(() => store.hide('about-me-article'))" />
     </div>
   </article>
 </template>
 
 <script setup lang="ts">
   import CallToActionButton from "@components/CallToActionButton.vue"
-  import { MainStore } from '@stores/MainStore'
+  import { useStore } from '@stores/Store'
 
   const CV_FILE = import.meta.env.VITE_ASSETS_CV_FILE
-  const mainStore = MainStore()
+  const store = useStore()
 </script>
 
-<style scoped lang="scss">
-  .close-btn {
-    z-index: 3;
-
-    position: fixed;
-    bottom: 8rem;
-    right: 2rem;
-
-    @include since-computer-size {
-      top: 5rem;
-    }
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    width: 3rem;
-    height: 3rem;
-
-    background-color: #ffffffcd;
-    border: none;
-    border-radius: $borderRadius;
-
-    color: $primaryColor;
-    font-size: 2rem;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .close-btn__svg {
-    width: 1.8rem;
-    fill: $secondaryColor;
-  }
-
-  .about-me-article {
-    z-index: 2;
-
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-
-    top: 0;
-    left: 0;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-
-    @include since-computer-size {
-      align-items: center;
-    }
-
-    padding: 5vh 15vw;
-
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    background: #ffffff;
-
-    h1 {
-      background: linear-gradient(to bottom, $secondaryColorLight 10%, $accentColor 45%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: #ffffff;
-    }
-
-    h2 {
-      color: $secondaryColor;
-    }
-  }
-
-  .about-me-article__content {
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-
-    @include since-computer-size {
-      width: 60%;
-    }
-  }
-
-  .about-me-artice__cta-group {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-
-    @include since-computer-size {
-      flex-flow: row nowrap;
-      justify-content: center;
-    }
-  }
-
-  .about-me-article__cta {
-    margin: 40px 0;
-
-    font-weight: 500;
-    border-color: transparent;
-    background: $accentColor;
-    color: $secondaryColor;
-
-    text-align: center;
-
-    cursor: pointer;
-
-    @include since-computer-size {
-      margin: 40px 30px;
-    }
-  }
-
-  .close-cta-btn {
-    display: none;
-
-    background-color: $secondaryColor;
-
-    color: $primaryColor;
-
-    @include since-computer-size {
-      display: block;
-    }
-  }
+<style scoped lang="less">
 </style>

@@ -23,42 +23,5 @@
   });
 </script>
 
-<style scoped lang="scss">
-  $hoverColor: #ffffff !default;
-  $borderWidth: 1px !default;
-
-  $linkedInColor: #0E76A8;
-
-  .link-linked-in {
-    width: 100%;
-    height: 100%;
-
-    padding: 0.3rem;
-
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-
-    text-decoration: none;
-
-    border: $borderWidth solid $linkedInColor;
-    border-radius: $borderRadius;
-
-    .link-linked-in__svg {
-      fill: $linkedInColor;
-    }
-
-    &:hover {
-      border-color: #73a1b6;
-    }
-
-    &:hover>.link-linked-in__svg {
-      fill: #73a1b6;
-    }
-  }
-
-  .link-linked-in--borderless {
-    border: none;
-  }
+<style scoped lang="less">
 </style>
