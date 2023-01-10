@@ -15,7 +15,7 @@
 @horizontal-nav-embedded-links-color--dark: #f0d29a;
 @horizontal-nav-social-links-color--dark: #457ffc;
 
-@page-horizontal-padding: 200px;
+@page-horizontal-padding-pc: 100px;
 
 .horizontal-nav {
   display: flex;
@@ -23,7 +23,7 @@
 
   overflow: hidden;
 
-  padding: 0 @page-horizontal-padding;
+  padding: 0 @page-horizontal-padding-pc;
 
   &__flex-expand {
     flex-grow: 1;
@@ -70,25 +70,25 @@
     .horizontal-nav__links {
       &:deep(.link) {
         color: @horizontal-nav-link-color--dark;
-  
+
         &:hover {
           color: @horizontal-nav-link-color-hover--dark;
         }
       }
     }
-  
+
     .horizontal-nav__route-links {
       &:deep(.link--active) {
         color: @horizontal-nav-link-color--active--dark;
       }
     }
-  
+
     .horizontal-nav__embedded-links {
       &:deep(.link) {
         color: @horizontal-nav-embedded-links-color--dark;
       }
     }
-  
+
     .horizontal-nav__social-links {
       &:deep(.link) {
         color: @horizontal-nav-social-links-color--dark;
