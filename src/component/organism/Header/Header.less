@@ -14,6 +14,11 @@
 
   background-color: @header-bg-color;
 
+  .size(tablet; {
+    height: @header-max-height;
+    max-height: @header-max-height;
+  });
+
   .size(pc; {
     height: @header-max-height;
     max-height: @header-max-height;
@@ -62,6 +67,10 @@
       font-family: 'BlackSignature';
       color: @header-hero-heading-font-color;
 
+      .size(tablet; {
+        font-size: 4rem;
+      });
+
       .size(pc; {
         font-size: 6rem;
       });
@@ -69,6 +78,10 @@
 
     &__heading-sub {
       color: @header-hero-heading-sub-font-color;
+
+      .size(tablet; {
+        font-size: 2rem;
+      });
 
       .size(pc; {
         font-size: 3rem;
@@ -79,6 +92,10 @@
       margin-top: 20px;
       padding: 8px 20px;
       font-size: 1rem;
+
+      .size(tablet; {
+        font-size: 1.5rem;
+      });
 
       .size(pc; {
         font-size: 1.5rem;
