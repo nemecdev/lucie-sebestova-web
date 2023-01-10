@@ -7,28 +7,33 @@ import CookieConsentInitUrl from './cookieconsent-init.js?url'
 import CookieConsentUrl from '../node_modules/vanilla-cookieconsent/dist/cookieconsent.js?url'
 import CookieConsentCssUrl from '../node_modules/vanilla-cookieconsent/dist/cookieconsent.css?url'
 
-const cCssEl = document.getElementById('cookieconsent-css') as HTMLLinkElement
-
-if (cCssEl) cCssEl.href = CookieConsentCssUrl
-const scriptEl = () => document.createElement('script')
-
-// #TODO - fix cookie consent
 document.addEventListener('DOMContentLoaded', () => {
   const sweetScroll = new SweetScroll({
     easing: 'easeInOutSine'
   })
-  
-  const consentScript = scriptEl()
-  consentScript.src = CookieConsentUrl
-  document.body.appendChild(consentScript)
-
-  const consentInitScript = scriptEl()
-  consentInitScript.src = CookieConsentInitUrl
-  document.body.appendChild(consentInitScript)
 }, false)
 
 createApp(App)
   .use(createPinia())
   .mount('#app')
 
-  
+
+// #TODO - Find better way to import js libs which are not modules
+const cCssEl: HTMLLinkElement | null = document.getElementById('cookieconsent-css') as HTMLLinkElement
+if (cCssEl) cCssEl.href = CookieConsentCssUrl
+
+const scriptEl = (id: string, scriptUrl: string): HTMLScriptElement => {
+  const el = document.createElement('script')
+  el.src = scriptUrl
+  el.id = id
+
+  return el
+}
+
+document.body.appendChild(scriptEl('cookieconsent', CookieConsentUrl))
+const el = document.getElementById('cookieconsent')
+if (el) {
+  el.onload = () => {
+    document.body.appendChild(scriptEl('cookieconsent-init', CookieConsentInitUrl))
+  }
+}
