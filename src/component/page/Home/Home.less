@@ -4,13 +4,14 @@
   }
 
   .box-context {
+    width: 250px;
+    min-height: 230px;
+
     margin: 0;
     margin-bottom: 20px;
-    width: 90%;
 
     .size(pc; {
       width: 290px;
-      height: 230px;
     });
 
     &--light {
@@ -28,17 +29,22 @@
   }
 
   .about-me-content {
-    width: 100%;
+    width: 290px;
     justify-content: center;
 
-    overflow: hidden;
+    .size(tablet; {
+      gap: 0 20px;
+
+      width: 100%;
+      min-height: 500px;
+      max-width: 550px;
+    });
 
     .size(pc; {
       gap: 0 20px;
-      justify-content: flex-start;
 
-      width: 610px;
-      height: 500px;
+      width: 100%;
+      max-width: 610px;
     });
   }
 }
