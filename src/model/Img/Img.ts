@@ -10,13 +10,15 @@ export interface IImg {
 export class Img implements IImg
 {
   _name: string
+  _album: string
   _width: number
   _height: number
   _contentSize: number
   _encodingFormat: MIME
 
-  constructor(name: string, width: number, height: number, contentSize: number, encodingFormat: MIME) {
+  constructor(name: string, album: string, width: number, height: number, contentSize: number, encodingFormat: MIME) {
     this._name = name
+    this._album = album
     this._width = width
     this._height = height
     this._contentSize = contentSize
@@ -26,6 +28,11 @@ export class Img implements IImg
   getName(): string
   {
     return this._name
+  }
+
+  getAlbum(): string
+  {
+    return this._album
   }
 
   getWidth(): number

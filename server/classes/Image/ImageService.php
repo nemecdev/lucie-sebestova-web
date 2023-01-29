@@ -14,11 +14,16 @@ final class ImageService
         MIME::PNG,
         MIME::GIF,
     ];
+    const OMIT_DIR_LIST = [
+        '.',
+        '..',
+    ];
 
     private PathValidator $pathValidator;
     private ImageList $imgList;
     private string $baseDir;
     private string $imgDir;
+    private string $forbiddenAlbumName;
     private array $errs;
 
     public function __construct(string $baseDir, PathValidator $pathValidator)
@@ -26,6 +31,8 @@ final class ImageService
         $this->pathValidator = $pathValidator;
         $this->baseDir = $baseDir;
         $this->imgDir = $baseDir . '/' . self::DEFAULT_DIR_NAME;
+        $imgDirExploded = \explode('/', $this->imgDir);
+        $this->forbiddenAlbumName = $imgDirExploded[\sizeof($imgDirExploded) - 1];
         $this->imgList = new ImageList();
         $this->errs = [];
     }
@@ -36,6 +43,8 @@ final class ImageService
             $imgDir = $this->baseDir . '/' . $imgDir;
             $this->pathValidator->validate($imgDir);
             $this->imgDir = $imgDir;
+            $imgDirExploded = \explode('/', $this->imgDir);
+            $this->forbiddenAlbumName = $imgDirExploded[\sizeof($imgDirExploded) - 1];
         } catch (ValidationException $e) {
             $this->errs[] = $e->getMessage();
 
@@ -46,7 +55,7 @@ final class ImageService
     public function getImageList(): ImageList
     {
         if (\sizeof($this->imgList) === 0) {
-            $this->scanDirForImages();
+            $this->scanDirForImages($this->imgDir);
         }
 
         return $this->imgList;
@@ -57,20 +66,32 @@ final class ImageService
         return $this->errs;
     }
 
-    private function scanDirForImages(): void
+    private function scanDirForImages(string $imgDir): void
     {
         try {
-            if (is_dir($this->imgDir)) {
-                $images = array_values(array_filter(
-                    \scandir($this->imgDir),
-                    function ($fileName) {
-                        $mime = \mime_content_type(
-                            $this->imgDir . "/{$fileName}"
-                        );
+            if (\is_dir($imgDir)) {
+                $images = array_values(
+                    array_filter(
+                        \scandir($imgDir),
+                        function ($fileName) use ($imgDir) {
+                            if (\in_array($fileName, self::OMIT_DIR_LIST)) {
+                                return false;
+                            }
 
-                        return \in_array(MIME::tryFrom($mime), self::ALLOWED_MIME_TYPES);
-                    }
-                ));
+                            if (\is_dir($imgDir . "/{$fileName}")) {
+                                $this->scanDirForImages($imgDir . "/{$fileName}");
+                            }
+
+                            $mime = \mime_content_type($imgDir . "/{$fileName}");
+
+                            return \in_array(MIME::tryFrom($mime), self::ALLOWED_MIME_TYPES);
+                        }
+                    )
+                );
+
+                array_walk($images, function (&$fileName, $key, $imgDir) {
+                    $fileName = $imgDir . "/{$fileName}";
+                }, $imgDir);
 
                 $this->constructImages($images);
             }
@@ -94,12 +115,20 @@ final class ImageService
 
     private function createImage(string $fileName): Image
     {
-        $file = $this->imgDir . "/{$fileName}";
+        $file = $fileName;
+        $fileNameParts = \explode('/', $fileName);
         $imageSize = \getimagesize($file);
         $imageStat = \stat($file);
 
+        $imageName = $fileNameParts[\sizeOf($fileNameParts) - 1];
+        $imageAlbum = $fileNameParts[\sizeOf($fileNameParts) - 2];
+
         $image = new Image();
-        $image->setName($fileName);
+        if ($imageAlbum !== $this->forbiddenAlbumName) {
+            $image->setAlbum($imageAlbum);
+        }
+
+        $image->setName($imageName);
         $image->setContentSize($imageStat['size']);
         $image->setEncodingFormat(MIME::from(mime_content_type($file)));
         $image->setWidth($imageSize[0]);

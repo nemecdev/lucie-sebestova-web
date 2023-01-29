@@ -1,23 +1,23 @@
 <template>
   <div class="portfolio">
     <div class="portfolio__img-group">
-      <img class="portfolio__img"
-           v-for="(img, id) in imgs.slice(0, portfolioState.lastNonLazyImgItemId)"
+      <Img class="portfolio__img"
+           v-for="(img, id) in filteredImgs.slice(0, portfolioState.lastNonLazyImgItemId)"
            :key="id"
-           :src="imgDir + '/mobile/' + img.getName()"
+           :src="imgDir + '/mobile/' + img.getAlbum() + '/' + img.getName()"
            :srcset="
-              imgDir + '/mobile/' + img.getName() + ' 1024w, ' +
-              imgDir + '/desktop/' + img.getName() + ' 1366w, '
+              imgDir + '/mobile/' + img.getAlbum() + '/' + img.getName() + ' 1024w, ' +
+              imgDir + '/desktop/' + img.getAlbum() + '/' + img.getName() + ' 1366w, '
            "
            sizes="(max-width: 1365px) 1024w, 1366w"
       />
-      <img v-for="(img, id) in imgs.slice(portfolioState.lastNonLazyImgItemId, portfolioState.lastLazyImgItemId)"
+      <Img v-for="(img, id) in filteredImgs.slice(portfolioState.lastNonLazyImgItemId, portfolioState.lastLazyImgItemId)"
            :key="id"
            :src="''"
-           :data-src="imgDir + '/mobile/' + img.getName()"
+           :data-src="imgDir + '/mobile/' + img.getAlbum() + '/' + img.getName()"
            :srcset="
-              imgDir + '/mobile/' + img.getName() + ' 1024w, ' +
-              imgDir + '/desktop/' + img.getName() + ' 1366w, '
+              imgDir + '/mobile/' + img.getAlbum() + '/' + img.getName() + ' 1024w, ' +
+              imgDir + '/desktop/' + img.getAlbum() + '/' + img.getName() + ' 1366w, '
            "
            sizes="(max-width: 1365px) 1024w, 1366w"
            :alt="img.getName()"
@@ -44,11 +44,12 @@
 
 <script setup lang="ts">
   import axios from "axios"
-
-  import { onUpdated, reactive, UnwrapNestedRefs } from "vue"
-
-  import { Img } from "@model/Img/Img"
-
+  
+  import { onUpdated, reactive, UnwrapNestedRefs, Ref, computed, ref } from "vue"
+  
+  import { Img as ImgModel } from "@model/Img/Img"
+  
+  import Img from "@atom/Img/Img.vue"
   import Button from "@atom/Button/Button.vue";
 
   onUpdated(() => {
@@ -96,15 +97,21 @@
       messages = data.pop()
       data.forEach((img: any) => {
         imgs.push(
-          new Img(
+          new ImgModel(
             String(img.name),
+            String(img.album),
             Number(img.width),
             Number(img.height),
             Number(img.contentSize),
             img.encodingFormat
           )
         )
+
+        if (img.album.length > 0)
+          albums.push(img.album)
       })
+
+      albums = [...new Set(albums)]
 
       portfolioState.lastLazyImgItemId = imgs.length > portfolioState.initLoadQty
         ? portfolioState.initLoadQty
@@ -122,8 +129,14 @@
     lastLazyImgItemId: 0 as number,
   }
 
+  const albumFilter: Ref<string> = ref('')
+  const filteredImgs = computed(() => {
+    return imgs.filter((img) => img.getAlbum().includes(albumFilter.value))
+  })
+
   let portfolioState = reactive({ ... initialPortfolioState })
-  let imgs: UnwrapNestedRefs<Array<Img>> = reactive([])
+  let imgs: UnwrapNestedRefs<Array<ImgModel>> = reactive([])
+  let albums: UnwrapNestedRefs<Array<string>> = reactive([])
 
   let messages: Array<any> = []
   let errors: Array<any> = []

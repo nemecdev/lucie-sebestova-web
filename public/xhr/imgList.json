@@ -1,503 +1,575 @@
 {
   "0": {
-    "name": "1993-tricko.jpg",
-    "contentSize": 405124,
+    "name": "01-smaltovna-menu.jpg",
+    "album": "albumA",
+    "contentSize": 186482,
     "width": 1920,
-    "height": 2356,
+    "height": 1440,
     "encodingFormat": "image\/jpeg"
   },
   "1": {
-    "name": "Svatebni-oznameni-KaO.jpg",
-    "contentSize": 281901,
+    "name": "02-m+fish-logo.jpg",
+    "album": "albumA",
+    "contentSize": 416417,
     "width": 1920,
-    "height": 2557,
+    "height": 1842,
     "encodingFormat": "image\/jpeg"
   },
   "2": {
-    "name": "animace-silvestr.gif",
+    "name": "03-animace-silvestr.gif",
+    "album": "albumA",
     "contentSize": 2992283,
     "width": 1920,
     "height": 1920,
     "encodingFormat": "image\/gif"
   },
   "3": {
-    "name": "astronaut-tricko-s\u00edtotisk.jpg",
-    "contentSize": 218857,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "4": {
-    "name": "batman-tricko.jpg",
-    "contentSize": 414396,
-    "width": 1920,
-    "height": 2356,
-    "encodingFormat": "image\/jpeg"
-  },
-  "5": {
-    "name": "body-lodicka.jpg",
-    "contentSize": 162586,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "6": {
-    "name": "cesky-svaz-curlingu-tricka.jpg",
-    "contentSize": 95297,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "7": {
-    "name": "deskova-hra-.jpg",
-    "contentSize": 277971,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "8": {
-    "name": "di\u00e1\u0159-2018-vnit\u0159ek.jpg",
-    "contentSize": 201794,
-    "width": 1920,
-    "height": 1440,
-    "encodingFormat": "image\/jpeg"
-  },
-  "9": {
-    "name": "di\u00e1\u0159-2018.jpg",
-    "contentSize": 508724,
-    "width": 1920,
-    "height": 1440,
-    "encodingFormat": "image\/jpeg"
-  },
-  "10": {
-    "name": "dovolena-tricko.jpg",
-    "contentSize": 419727,
-    "width": 1920,
-    "height": 2356,
-    "encodingFormat": "image\/jpeg"
-  },
-  "11": {
-    "name": "d\u011btsk\u00e9-body-hudba.jpg",
-    "contentSize": 550570,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "12": {
-    "name": "d\u011btsk\u00e9-mikiny.jpg",
-    "contentSize": 272471,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "13": {
-    "name": "embecko-digikresba.jpg",
-    "contentSize": 229566,
-    "width": 1920,
-    "height": 1363,
-    "encodingFormat": "image\/jpeg"
-  },
-  "14": {
-    "name": "erko-digikresba.jpg",
-    "contentSize": 184838,
-    "width": 1920,
-    "height": 1363,
-    "encodingFormat": "image\/jpeg"
-  },
-  "15": {
-    "name": "felicia-cabrio-digikresba.jpg",
-    "contentSize": 219360,
-    "width": 1920,
-    "height": 1363,
-    "encodingFormat": "image\/jpeg"
-  },
-  "16": {
-    "name": "fotoalbum-svatba.jpg",
-    "contentSize": 196875,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "17": {
-    "name": "jim-a-piju-za-dva-tricka.jpg",
-    "contentSize": 228549,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "18": {
-    "name": "jindra.jpg",
-    "contentSize": 296898,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "19": {
-    "name": "kabat-cirkus-tricko.jpg",
-    "contentSize": 454182,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "20": {
-    "name": "kabat-tricko.jpg",
-    "contentSize": 642299,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "21": {
-    "name": "kalendar-lapac.jpg",
-    "contentSize": 301766,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "22": {
-    "name": "kalendare.jpg",
-    "contentSize": 226158,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "23": {
-    "name": "kniha-sebestovi-vypravejte.jpg",
-    "contentSize": 265925,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "24": {
-    "name": "kostym-spiderman.jpg",
-    "contentSize": 289609,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "25": {
-    "name": "kvetiny-digikresba.jpg",
-    "contentSize": 186109,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "26": {
-    "name": "legend-tricko.jpg",
-    "contentSize": 102996,
-    "width": 1920,
-    "height": 1440,
-    "encodingFormat": "image\/jpeg"
-  },
-  "27": {
-    "name": "lenochod-meditace-tricko.jpg",
-    "contentSize": 423121,
-    "width": 1920,
-    "height": 2356,
-    "encodingFormat": "image\/jpeg"
-  },
-  "28": {
-    "name": "lenochod-tricko.jpg",
-    "contentSize": 367408,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "29": {
-    "name": "lodicka-tricko.jpg",
+    "name": "04-lodicka-tricko.jpg",
+    "album": "",
     "contentSize": 419198,
     "width": 1920,
     "height": 2356,
     "encodingFormat": "image\/jpeg"
   },
-  "30": {
-    "name": "m+fish-logo.jpg",
-    "contentSize": 416417,
-    "width": 1920,
-    "height": 1842,
-    "encodingFormat": "image\/jpeg"
-  },
-  "31": {
-    "name": "med-plakat-ceny.jpg",
-    "contentSize": 70781,
-    "width": 1920,
-    "height": 1340,
-    "encodingFormat": "image\/jpeg"
-  },
-  "32": {
-    "name": "mesic-tricko.jpg",
-    "contentSize": 37603,
-    "width": 1920,
-    "height": 1440,
-    "encodingFormat": "image\/jpeg"
-  },
-  "33": {
-    "name": "milnikove-karticky.jpg",
-    "contentSize": 49410,
-    "width": 1920,
-    "height": 1280,
-    "encodingFormat": "image\/jpeg"
-  },
-  "34": {
-    "name": "myrsa-obaly.jpg",
-    "contentSize": 130326,
-    "width": 1920,
-    "height": 1188,
-    "encodingFormat": "image\/jpeg"
-  },
-  "35": {
-    "name": "nereshit-tricko.jpg",
-    "contentSize": 326990,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "36": {
-    "name": "palava-tricko.jpg",
-    "contentSize": 434956,
-    "width": 1920,
-    "height": 2716,
-    "encodingFormat": "image\/jpeg"
-  },
-  "37": {
-    "name": "pi\u0161kvorky.jpg",
-    "contentSize": 181993,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "38": {
-    "name": "plakat-viktor-souhvezdi.jpg",
-    "contentSize": 373936,
-    "width": 1920,
-    "height": 2716,
-    "encodingFormat": "image\/jpeg"
-  },
-  "39": {
-    "name": "plechacek-foto.jpeg",
-    "contentSize": 74246,
-    "width": 1920,
-    "height": 1079,
-    "encodingFormat": "image\/jpeg"
-  },
-  "40": {
-    "name": "poster-1.jpg",
-    "contentSize": 90234,
-    "width": 1920,
-    "height": 2003,
-    "encodingFormat": "image\/jpeg"
-  },
-  "41": {
-    "name": "poster-2.jpg",
-    "contentSize": 77329,
-    "width": 1920,
-    "height": 2003,
-    "encodingFormat": "image\/jpeg"
-  },
-  "42": {
-    "name": "poster-3.jpg",
-    "contentSize": 95561,
-    "width": 1920,
-    "height": 2003,
-    "encodingFormat": "image\/jpeg"
-  },
-  "43": {
-    "name": "poster-4.jpg",
-    "contentSize": 84655,
-    "width": 1920,
-    "height": 2003,
-    "encodingFormat": "image\/jpeg"
-  },
-  "44": {
-    "name": "pozvanka.jpg",
-    "contentSize": 176321,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "45": {
-    "name": "pozvanky-vnitrek.jpg",
-    "contentSize": 190920,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "46": {
-    "name": "pracovn\u00ed-di\u00e1\u0159.jpg",
-    "contentSize": 530960,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "47": {
-    "name": "pratele-tricko.jpg",
-    "contentSize": 155832,
-    "width": 1920,
-    "height": 2560,
-    "encodingFormat": "image\/jpeg"
-  },
-  "48": {
-    "name": "rapid-digikresba.jpg",
-    "contentSize": 265991,
-    "width": 1920,
-    "height": 1920,
-    "encodingFormat": "image\/jpeg"
-  },
-  "49": {
-    "name": "razitko-bracha.jpg",
-    "contentSize": 85286,
-    "width": 1920,
-    "height": 1440,
-    "encodingFormat": "image\/jpeg"
-  },
-  "50": {
-    "name": "razitko-deda.jpg",
-    "contentSize": 75996,
-    "width": 1920,
-    "height": 1440,
-    "encodingFormat": "image\/jpeg"
-  },
-  "51": {
-    "name": "rekalma-sklik.jpg",
-    "contentSize": 283029,
-    "width": 1920,
-    "height": 2182,
-    "encodingFormat": "image\/jpeg"
-  },
-  "52": {
-    "name": "reklamni-plakaty.jpg",
-    "contentSize": 468413,
-    "width": 1920,
-    "height": 2182,
-    "encodingFormat": "image\/jpeg"
-  },
-  "53": {
-    "name": "roll-up-Diplomka-24.jpg",
+  "4": {
+    "name": "05-roll-up-Diplomka-24.jpg",
+    "album": "",
     "contentSize": 90442,
     "width": 1920,
     "height": 1920,
     "encodingFormat": "image\/jpeg"
   },
-  "54": {
-    "name": "roll-up-alfaomega.jpg",
-    "contentSize": 95380,
+  "5": {
+    "name": "06-trika-eshop-textove.jpg",
+    "album": "",
+    "contentSize": 205206,
+    "width": 519,
+    "height": 526,
+    "encodingFormat": "image\/jpeg"
+  },
+  "6": {
+    "name": "07-deskova-hra-.jpg",
+    "album": "",
+    "contentSize": 277971,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "7": {
+    "name": "08-di\u00e1\u0159-2018-vnit\u0159ek.jpg",
+    "album": "",
+    "contentSize": 289586,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "8": {
+    "name": "09-rapid-digikresba.jpg",
+    "album": "",
+    "contentSize": 265991,
     "width": 1920,
     "height": 1920,
     "encodingFormat": "image\/jpeg"
   },
-  "55": {
-    "name": "royalwash-tricka-mikiny.jpg",
-    "contentSize": 573624,
+  "9": {
+    "name": "10-Svatebni-oznameni-KaO.jpg",
+    "album": "",
+    "contentSize": 281901,
     "width": 1920,
-    "height": 4753,
+    "height": 2557,
     "encodingFormat": "image\/jpeg"
   },
-  "56": {
-    "name": "sebesta-vizitky.jpg",
+  "10": {
+    "name": "11-rekalma-sklik.jpg",
+    "album": "",
+    "contentSize": 283029,
+    "width": 1920,
+    "height": 2182,
+    "encodingFormat": "image\/jpeg"
+  },
+  "11": {
+    "name": "12-sebesta-vizitky.jpg",
+    "album": "",
     "contentSize": 359530,
     "width": 1920,
     "height": 2560,
     "encodingFormat": "image\/jpeg"
   },
+  "12": {
+    "name": "1993-tricko.jpg",
+    "album": "",
+    "contentSize": 405124,
+    "width": 1920,
+    "height": 2356,
+    "encodingFormat": "image\/jpeg"
+  },
+  "13": {
+    "name": "astronaut-tricko-s\u00edtotisk.jpg",
+    "album": "",
+    "contentSize": 218857,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "14": {
+    "name": "batman-tricko.jpg",
+    "album": "",
+    "contentSize": 414396,
+    "width": 1920,
+    "height": 2356,
+    "encodingFormat": "image\/jpeg"
+  },
+  "15": {
+    "name": "body-lodicka.jpg",
+    "album": "",
+    "contentSize": 162586,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "16": {
+    "name": "bracha-razitko.jpg",
+    "album": "",
+    "contentSize": 85286,
+    "width": 1920,
+    "height": 1440,
+    "encodingFormat": "image\/jpeg"
+  },
+  "17": {
+    "name": "cesky-svaz-curlingu-tricka.jpg",
+    "album": "",
+    "contentSize": 95297,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "18": {
+    "name": "di\u00e1\u0159-2018.jpg",
+    "album": "",
+    "contentSize": 508724,
+    "width": 1920,
+    "height": 1440,
+    "encodingFormat": "image\/jpeg"
+  },
+  "19": {
+    "name": "dovolena-tricko.jpg",
+    "album": "",
+    "contentSize": 419727,
+    "width": 1920,
+    "height": 2356,
+    "encodingFormat": "image\/jpeg"
+  },
+  "20": {
+    "name": "d\u011btsk\u00e9-body-hudba.jpg",
+    "album": "",
+    "contentSize": 550570,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "21": {
+    "name": "d\u011btsk\u00e9-mikiny.jpg",
+    "album": "",
+    "contentSize": 272471,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "22": {
+    "name": "embecko-digikresba.jpg",
+    "album": "",
+    "contentSize": 229566,
+    "width": 1920,
+    "height": 1363,
+    "encodingFormat": "image\/jpeg"
+  },
+  "23": {
+    "name": "erko-digikresba.jpg",
+    "album": "",
+    "contentSize": 184838,
+    "width": 1920,
+    "height": 1363,
+    "encodingFormat": "image\/jpeg"
+  },
+  "24": {
+    "name": "felicia-cabrio-digikresba.jpg",
+    "album": "",
+    "contentSize": 219360,
+    "width": 1920,
+    "height": 1363,
+    "encodingFormat": "image\/jpeg"
+  },
+  "25": {
+    "name": "fotoalbum-svatba.jpg",
+    "album": "",
+    "contentSize": 196875,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "26": {
+    "name": "jim-a-piju-za-dva-tricka.jpg",
+    "album": "",
+    "contentSize": 228549,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "27": {
+    "name": "jindra.jpg",
+    "album": "",
+    "contentSize": 296898,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "28": {
+    "name": "kabat-cirkus-tricko.jpg",
+    "album": "",
+    "contentSize": 454182,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "29": {
+    "name": "kabat-tricko.jpg",
+    "album": "",
+    "contentSize": 642299,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "30": {
+    "name": "kalendar-lapac.jpg",
+    "album": "",
+    "contentSize": 301766,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "31": {
+    "name": "kalendare.jpg",
+    "album": "",
+    "contentSize": 226158,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "32": {
+    "name": "kniha-sebestovi-vypravejte.jpg",
+    "album": "",
+    "contentSize": 265925,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "33": {
+    "name": "kostym-spiderman.jpg",
+    "album": "",
+    "contentSize": 289609,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "34": {
+    "name": "kvetiny-digikresba.jpg",
+    "album": "",
+    "contentSize": 186109,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "35": {
+    "name": "legend-tricko.jpg",
+    "album": "",
+    "contentSize": 102996,
+    "width": 1920,
+    "height": 1440,
+    "encodingFormat": "image\/jpeg"
+  },
+  "36": {
+    "name": "lenochod-meditace-tricko.jpg",
+    "album": "",
+    "contentSize": 423121,
+    "width": 1920,
+    "height": 2356,
+    "encodingFormat": "image\/jpeg"
+  },
+  "37": {
+    "name": "lenochod-tricko.jpg",
+    "album": "",
+    "contentSize": 367408,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "38": {
+    "name": "med-plakat-ceny.jpg",
+    "album": "",
+    "contentSize": 70781,
+    "width": 1920,
+    "height": 1340,
+    "encodingFormat": "image\/jpeg"
+  },
+  "39": {
+    "name": "mesic-tricko.jpg",
+    "album": "",
+    "contentSize": 37603,
+    "width": 1920,
+    "height": 1440,
+    "encodingFormat": "image\/jpeg"
+  },
+  "40": {
+    "name": "milnikove-karticky.jpg",
+    "album": "",
+    "contentSize": 49410,
+    "width": 1920,
+    "height": 1280,
+    "encodingFormat": "image\/jpeg"
+  },
+  "41": {
+    "name": "myrsa-obaly.jpg",
+    "album": "",
+    "contentSize": 130326,
+    "width": 1920,
+    "height": 1188,
+    "encodingFormat": "image\/jpeg"
+  },
+  "42": {
+    "name": "nereshit-tricko.jpg",
+    "album": "",
+    "contentSize": 326990,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "43": {
+    "name": "palava-tricko.jpg",
+    "album": "",
+    "contentSize": 434956,
+    "width": 1920,
+    "height": 2716,
+    "encodingFormat": "image\/jpeg"
+  },
+  "44": {
+    "name": "pi\u0161kvorky.jpg",
+    "album": "",
+    "contentSize": 181993,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "45": {
+    "name": "plakat-viktor-souhvezdi.jpg",
+    "album": "",
+    "contentSize": 373936,
+    "width": 1920,
+    "height": 2716,
+    "encodingFormat": "image\/jpeg"
+  },
+  "46": {
+    "name": "plechacek-foto.jpeg",
+    "album": "",
+    "contentSize": 74246,
+    "width": 1920,
+    "height": 1079,
+    "encodingFormat": "image\/jpeg"
+  },
+  "47": {
+    "name": "poster-1.jpg",
+    "album": "",
+    "contentSize": 90234,
+    "width": 1920,
+    "height": 2003,
+    "encodingFormat": "image\/jpeg"
+  },
+  "48": {
+    "name": "poster-2.jpg",
+    "album": "",
+    "contentSize": 77329,
+    "width": 1920,
+    "height": 2003,
+    "encodingFormat": "image\/jpeg"
+  },
+  "49": {
+    "name": "poster-3.jpg",
+    "album": "",
+    "contentSize": 95561,
+    "width": 1920,
+    "height": 2003,
+    "encodingFormat": "image\/jpeg"
+  },
+  "50": {
+    "name": "poster-4.jpg",
+    "album": "",
+    "contentSize": 84655,
+    "width": 1920,
+    "height": 2003,
+    "encodingFormat": "image\/jpeg"
+  },
+  "51": {
+    "name": "pozvanka.jpg",
+    "album": "",
+    "contentSize": 176321,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "52": {
+    "name": "pozvanky-vnitrek.jpg",
+    "album": "",
+    "contentSize": 190920,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "53": {
+    "name": "pracovn\u00ed-di\u00e1\u0159.jpg",
+    "album": "",
+    "contentSize": 530960,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "54": {
+    "name": "pratele-tricko.jpg",
+    "album": "",
+    "contentSize": 155832,
+    "width": 1920,
+    "height": 2560,
+    "encodingFormat": "image\/jpeg"
+  },
+  "55": {
+    "name": "razitko-deda.jpg",
+    "album": "",
+    "contentSize": 75996,
+    "width": 1920,
+    "height": 1440,
+    "encodingFormat": "image\/jpeg"
+  },
+  "56": {
+    "name": "reklamni-plakaty.jpg",
+    "album": "",
+    "contentSize": 468413,
+    "width": 1920,
+    "height": 2182,
+    "encodingFormat": "image\/jpeg"
+  },
   "57": {
+    "name": "roll-up-alfaomega.jpg",
+    "album": "",
+    "contentSize": 95380,
+    "width": 1920,
+    "height": 1920,
+    "encodingFormat": "image\/jpeg"
+  },
+  "58": {
+    "name": "royalwash-tricka-mikiny.jpg",
+    "album": "",
+    "contentSize": 573624,
+    "width": 1920,
+    "height": 4753,
+    "encodingFormat": "image\/jpeg"
+  },
+  "59": {
     "name": "skoda-fabia-tricko.jpg",
+    "album": "",
     "contentSize": 418882,
     "width": 1920,
     "height": 2560,
     "encodingFormat": "image\/jpeg"
   },
-  "58": {
+  "60": {
     "name": "skoda100-tricko.jpg",
+    "album": "",
     "contentSize": 237822,
     "width": 1920,
     "height": 2557,
     "encodingFormat": "image\/jpeg"
   },
-  "59": {
-    "name": "smaltovna-menu.jpg",
-    "contentSize": 186482,
-    "width": 1920,
-    "height": 1440,
-    "encodingFormat": "image\/jpeg"
-  },
-  "60": {
+  "61": {
     "name": "srdce-mozek-digikresba.jpg",
+    "album": "",
     "contentSize": 253091,
     "width": 1920,
     "height": 2716,
     "encodingFormat": "image\/jpeg"
   },
-  "61": {
+  "62": {
     "name": "srdce-vesmir-digikresba.jpg",
+    "album": "",
     "contentSize": 223203,
     "width": 1920,
     "height": 2716,
     "encodingFormat": "image\/jpeg"
   },
-  "62": {
+  "63": {
     "name": "svatebni-balicek.jpg",
+    "album": "",
     "contentSize": 120757,
     "width": 1920,
     "height": 1276,
     "encodingFormat": "image\/jpeg"
   },
-  "63": {
+  "64": {
     "name": "svatebni-oznameni-DaJ.jpg",
+    "album": "",
     "contentSize": 59209,
     "width": 1920,
     "height": 1363,
     "encodingFormat": "image\/jpeg"
   },
-  "64": {
+  "65": {
     "name": "svatebni-oznameni-SaM.jpg",
+    "album": "",
     "contentSize": 253171,
     "width": 1920,
     "height": 970,
     "encodingFormat": "image\/jpeg"
   },
-  "65": {
+  "66": {
     "name": "svatebni-oznameni-TaN.jpg",
+    "album": "",
     "contentSize": 86381,
     "width": 1920,
     "height": 1363,
     "encodingFormat": "image\/jpeg"
   },
-  "66": {
+  "67": {
     "name": "s\u00edtotisk.jpg",
+    "album": "",
     "contentSize": 116983,
     "width": 1920,
     "height": 1440,
     "encodingFormat": "image\/jpeg"
   },
-  "67": {
+  "68": {
     "name": "taska-lodicky.jpg",
+    "album": "",
     "contentSize": 93914,
     "width": 1920,
     "height": 1721,
     "encodingFormat": "image\/jpeg"
   },
-  "68": {
+  "69": {
     "name": "taska-neco-pro-tebe.jpg",
+    "album": "",
     "contentSize": 265984,
     "width": 1920,
     "height": 2716,
     "encodingFormat": "image\/jpeg"
   },
-  "69": {
-    "name": "taska-sitotisk.jpg",
-    "contentSize": 643703,
-    "width": 1920,
-    "height": 2880,
-    "encodingFormat": "image\/jpeg"
-  },
   "70": {
     "name": "taska.jpg",
-    "contentSize": 325134,
-    "width": 1920,
-    "height": 1280,
+    "album": "",
+    "contentSize": 336906,
+    "width": 1280,
+    "height": 1920,
     "encodingFormat": "image\/jpeg"
   },
   "71": {
     "name": "titanic-tricko-sitotisk.jpg",
+    "album": "",
     "contentSize": 341647,
     "width": 1920,
     "height": 2560,
@@ -505,6 +577,7 @@
   },
   "72": {
     "name": "tomas-hrdlicka-detailing-Logo.jpg",
+    "album": "",
     "contentSize": 235450,
     "width": 1920,
     "height": 1920,
@@ -512,27 +585,47 @@
   },
   "73": {
     "name": "trencin-plakat.jpg",
+    "album": "",
     "contentSize": 96413,
     "width": 1920,
     "height": 1440,
     "encodingFormat": "image\/jpeg"
   },
   "74": {
+    "name": "trika-eshop-pejsci.jpg",
+    "album": "",
+    "contentSize": 382061,
+    "width": 519,
+    "height": 1253,
+    "encodingFormat": "image\/jpeg"
+  },
+  "75": {
+    "name": "trika-eshop-souhvezdi.jpg",
+    "album": "",
+    "contentSize": 270966,
+    "width": 500,
+    "height": 638,
+    "encodingFormat": "image\/jpeg"
+  },
+  "76": {
     "name": "vanocni-jmenovky.jpg",
+    "album": "",
     "contentSize": 140533,
     "width": 1920,
     "height": 2560,
     "encodingFormat": "image\/jpeg"
   },
-  "75": {
+  "77": {
     "name": "vcelky-z-lesa-Logo.jpg",
+    "album": "",
     "contentSize": 58245,
     "width": 1920,
     "height": 1920,
     "encodingFormat": "image\/jpeg"
   },
-  "76": {
+  "78": {
     "name": "vcelky-z-lesa-tricka-sitotisk.jpg",
+    "album": "",
     "contentSize": 452812,
     "width": 1920,
     "height": 3413,

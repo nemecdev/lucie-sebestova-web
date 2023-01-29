@@ -10,10 +10,20 @@ use App\Image\MIME;
 class Image implements ExportAwareInterface
 {
     private string $name;
+    private string $album;
     private float $contentSize;
     private float $width;
     private float $height;
     private MIME $encodingFormat;
+
+    function __construct() {
+        $this->name = '';
+        $this->album = '';
+        $this->contentSize = 0.0;
+        $this->width = 0.0;
+        $this->height = 0.0;
+        $this->encodingFormat = MIME::UNKNOWN;
+    }
 
     public function getName(): string
     {
@@ -23,6 +33,16 @@ class Image implements ExportAwareInterface
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    public function getAlbum(): string
+    {
+        return $this->album;
+    }
+
+    public function setAlbum(string $album): void
+    {
+        $this->album = $album;
     }
 
     public function getContentSize(): float
@@ -69,6 +89,7 @@ class Image implements ExportAwareInterface
     {
         return [
             'name' => $this->name,
+            'album' => $this->album,
             'contentSize' => $this->contentSize,
             'width' => $this->width,
             'height' => $this->height,
@@ -89,6 +110,7 @@ class Image implements ExportAwareInterface
     public function __unserialize(array $data)
     {
         $this->name = $data['name'];
+        $this->album = $data['album'];
         $this->contentSize = $data['contentSize'];
         $this->width = $data['width'];
         $this->height = $data['height'];
